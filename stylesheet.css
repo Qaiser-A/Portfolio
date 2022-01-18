@@ -1,0 +1,56 @@
+.nav-bar {
+	background-color: mintcream;
+	font-family: sans-serif;
+	font-size: 2vw;
+	padding-bottom: 8px;
+}
+
+.right-hand-side {
+	float: right;
+	color: turquoise;
+}
+
+a {
+	position: relative;
+	text-decoration: none;
+	color: royalblue;
+	padding-right: 8px; /*Creates more space between the links, pushing it to the right*/
+}
+
+a:hover {
+	color: #0716b8;
+}
+
+a:before {
+	content: "";
+	position: absolute;
+	display: block;
+	width: 100%;
+	height: 2px;
+	bottom: 0;
+	left: 0;
+	background-color: #0716b8;
+	transform: scaleX(0);
+	transition: transform 0.3s ease;
+}
+
+a:hover:before {
+	transform: scaleX(1.0);
+}
+
+.grid-container {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(3, 5vw);
+	margin: 0 auto;
+	grid-gap: 10px;
+}
+
+.image {
+	width: 100%; /*Setting only the width or height pushes the images next to each other*/
+	height: auto; /*Set one to 100% and the other to auto as best practice*/
+}
+
+p {
+	font-family: 'Titillium Web', sans-serif;
+}
