@@ -1,5 +1,10 @@
+* {
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Titillium Web', sans-serif;
+}
+
 .nav-bar {
-	background-color: mintcream;
 	font-family: sans-serif;
 	font-size: 2vw;
 	padding-bottom: 8px;
@@ -8,6 +13,11 @@
 .right-hand-side {
 	float: right;
 	color: turquoise;
+}
+
+.intro-text {
+	text-align: center;
+	font-size: 1.5vw;
 }
 
 a {
@@ -43,6 +53,7 @@ a:hover:before {
 	grid-template-columns: repeat(2, 1fr);
 	margin: 0 auto;
 	grid-gap: 10px;
+	padding-top: 18px;
 }
 
 .image {
@@ -50,8 +61,12 @@ a:hover:before {
 	height: auto; /*Set one to 100% and the other to auto as best practice*/
 }
 
-p {
-	font-family: 'Titillium Web', sans-serif;
+.about-section > p {
+	text-align: center;
+}
+
+h1 {
+	text-align: center;
 }
 
 
