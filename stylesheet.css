@@ -8,6 +8,8 @@
 	font-family: sans-serif;
 	font-size: 2vw;
 	padding-bottom: 8px;
+	position: sticky; /*Keeps the nav visible when scrolling*/
+	top: 0; /*Makes the nav stay at the absoloute top of the screen*/
 }
 
 .right-hand-side {
