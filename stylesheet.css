@@ -18,6 +18,11 @@
 .intro-text {
 	text-align: center;
 	font-size: 1.5vw;
+	background-color: mintcream;
+}
+
+.scroll-container {
+	scroll-behavior: smooth;
 }
 
 a {
