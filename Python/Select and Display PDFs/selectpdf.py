@@ -30,7 +30,9 @@ def select_files():
 			print ('Selected files:', names_of_files) # Prints the filenames to console/terminal
 			#filelabel['text'] = names_of_files # Displays the filename stored in names_of_files to the filelabel
 			textArea.insert(END, names_of_files + '\n') # Displays every filename selected on a new line in the text area
-			showinfo(title='Selected Files', message='Files selected successfully') # Show message in a message box
+		
+		# Show message in a message box outside of the loop so it shows once when multiple files are selected
+		showinfo(title='Selected Files', message='Files selected successfully') 
 			
 	except IOError:
 		showinfo(title='Error', message='Could not open one or more files') # Error message if exception caught
