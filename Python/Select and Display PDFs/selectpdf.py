@@ -29,7 +29,7 @@ def select_files():
 			names_of_files = ntpath.basename(filename) # Puts the files selected without the path in names_of_files
 			print ('Selected files:', names_of_files) # Prints the filenames to console/terminal
 			#filelabel['text'] = names_of_files # Displays the filename stored in names_of_files to the filelabel
-			textArea.insert(END, names_of_files + '\n') # Displays every filename on a new line in a text box
+			textArea.insert(END, names_of_files + '\n') # Displays every filename selected on a new line in the text area
 			showinfo(title='Selected Files', message='Files selected successfully') # Show message in a message box
 			
 	except IOError:
