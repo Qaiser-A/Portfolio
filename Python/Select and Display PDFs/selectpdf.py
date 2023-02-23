@@ -13,7 +13,7 @@ window.title('PDF File Selector')
 window.geometry('800x500')
 
 # Creating a label to display a message to the user
-Label(window, text="Select the PDF file(s) to convert to Excel", font='Calibri 14').pack(pady=15)
+Label(window, text="Select any PDF file(s)", font='Calibri 14').pack(pady=15)
 
 
 # Function to select multiple files using askopenfilenames()
