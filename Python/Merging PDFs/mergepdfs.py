@@ -16,7 +16,7 @@ window.title('PDF File Converter')
 window.geometry('800x500')
 
 # Creating a label to display a message to the user
-Label(window, text="Select the PDF file(s) to convert to Excel", font='Calibri 14').pack(pady=15)
+Label(window, text="Select the PDF file(s) to convert", font='Calibri 14').pack(pady=15)
 
 # Merge and convert PDFs in one function
 def merge_selected_pdfs(filenames):
