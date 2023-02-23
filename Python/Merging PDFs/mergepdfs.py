@@ -22,6 +22,8 @@ Label(window, text="Select the PDF file(s) to convert", font='Calibri 14').pack(
 def merge_selected_pdfs(filenames):
 	try:
 		filetypes = [ ('PDF File', '*.pdf') ] # Type of file to be found and selected within the directory
+		
+		merger = PdfMerger() # Referencing and storing the merger function from PyPDF2 in merger
 	
 		# File dialog is represented as fd
 		filenames = fd.askopenfilenames(title='Open Files', initialdir='/', filetypes=filetypes) 
@@ -31,14 +33,13 @@ def merge_selected_pdfs(filenames):
 			names_of_files = ntpath.basename(filename) # Puts the files selected without the path in names_of_files
 			print ('Selected files:', names_of_files) # Prints the filenames to console/terminal
 			# outputfile = os.path.join(output_directory, pdf) # Save merged file in Downlaods directory
-			merger = PdfMerger() # Referencing and storing the merger function from PyPDF2 in merger
 			merger.append(filename) # Merging all of the files selected
 		# Files merged with a message outside of the loop
 		merger.write('Merged.pdf') # Saving it as the new specified filename
 		merger.close() # Stopping the function from running once it's done
 		showinfo('Success','PDF files successfully merged') # Displaying successful merger message
 		
-
+	# Try and catch used to catch any exceptions and show relevant error message
 	except FileNotFoundError:
 		showinfo('Error', 'File(s) Not Found')
 
