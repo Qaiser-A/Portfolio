@@ -33,4 +33,5 @@ for food in foods:
 for price in prices:
 	total += price
 
-print(f"Your total is: £{total}")
+# Able to put the variable "total" into the print statement by using an f string (putting f before the quotation marks) and {}
+print(f"Your total is: £{total}") 
