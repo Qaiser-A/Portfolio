@@ -1,5 +1,4 @@
 # Portfolio
 
-Having fun by building websites and writing snippets of code with what interests me, such as cars. 
+Having fun by building websites, programs and writing snippets of code in areas that interests me. 
 
-Look through and see what you like.
