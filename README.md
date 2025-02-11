@@ -1,4 +1,4 @@
 # Portfolio
 
-Having fun by building websites, programs and writing snippets of code in areas that interests me. 
+Having fun by building websites and programs in areas that interest me. 
 
